@@ -1,9 +1,10 @@
 const express = require("express");
-const cookieParser = require("cookie-parser");
 const app = express();
-const PORT = 3000;
+const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
+const PORT = 3000;
 require("dotenv").config();
+
 let refreshTokens = [];
 app.use(express.json());
 app.use(cookieParser());
